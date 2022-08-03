@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="400" style="border: 1px solid red">
+
+    </canvas>
+    <style>
+
+    </style>
+</body>
+</html>
+<script>
+    let canvas = document.querySelector('canvas');
+    let ctx = canvas.getContext('2d');
+    //绘制矩形
+    ctx.fillRect(100, 200, 100, 200)
+    //清除画布
+    //整个画布
+    // ctx.clearRect(0, 0, 600, 400);
+    //部分画布
+    ctx.clearRect(100, 200, 100, 100);
+    //绘制文字
+    //设置文字大小
+    ctx.font = '20px 微软雅黑 red'
+    ctx.fillStyle = 'red'
+    ctx.fillText('挥之文字', 50, 20)
+</script>
